@@ -3,11 +3,12 @@ import os
 import tensorflow as tf
 
 # Set the path to the text document
-document_path = "document.txt"
+document_path = 'C:\\Users\\Administrator\\Desktop\\Coding tests\\gpt-deep-learn-1\\moby dick.txt'
 
 # Read the text from the document
-with open(document_path, "r") as f:
+with open(document_path, "r", encoding="utf-8") as f:
     text = f.read()
+
 
 # Preprocess the text to prepare it for the model
 def preprocess_text(text):
